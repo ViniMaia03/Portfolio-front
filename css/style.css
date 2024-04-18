@@ -20,12 +20,32 @@ body {
     height: 100vh;
 }
 
-/* CABEÇALHO */
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    background-color: var(--azul_claro);
+    transform: scale(1.05);
+}
+
+/* CABEÇALHO */
 
 header .logo a img {
     width: 250px;
@@ -62,18 +82,35 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: var(--azul);
-    color: var(--branco);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+
+/* PÁGINA DE INÍCIO */
+
+section .inicio {
+    padding: 40px 4%;
 }
 
-header .btn-contato button:hover {
-    background-color: var(--azul_claro);
-    transform: scale(1.05);
+section .inicio .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.inicio h1 {
+    color: var(--branco);
+    font-size: 42px;
+}
+
+.inicio h1 span {
+    color: var(--azul_claro);
+}
+
+.inicio .txt-inicio p {
+    color: var(--branco);
+    margin: 40px 0;
+}
+
+.inicio .img-inicio img{
+    position: relative;
+    width: 500px;
+    height: 500px;
 }
