@@ -11,8 +11,8 @@
     --preto: #000;
     --branco: #fff;
     --cinza_claro: #a7a7a7;
-    --azul: #0800ff;
-    --azul_claro: #3a96ff;
+    --amarelo: #fcad02;
+    --amarelo_claro: #fac229;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: var(--azul);
+    background-color: var(--amarelo);
     color: var(--branco);
     border: 0;
     border-radius: 30px;
@@ -41,7 +41,7 @@ body {
 }
 
 .btn-contato button:hover {
-    background-color: var(--azul_claro);
+    background-color: var(--amarelo_claro);
     transform: scale(1.05);
 }
 
@@ -101,7 +101,7 @@ section .inicio .flex {
 }
 
 .inicio h1 span {
-    color: var(--azul_claro);
+    color: var(--amarelo_claro);
 }
 
 .inicio .txt-inicio p {
