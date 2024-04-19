@@ -1,4 +1,4 @@
-/* ESTLIZAÇÃO GERAL */
+/* ESTILIZAÇÃO GERAL */
 
 * {
     margin: 0;
@@ -12,12 +12,13 @@
     --branco: #fff;
     --cinza_claro: #a7a7a7;
     --amarelo: #fcad02;
-    --amarelo_claro: #fac229;
     --cinza: #393939;
+    --bg-color: #cacaca;
+    --azul-marinho: #000d59;
 }
 
 body {
-    background-color: var(--preto);
+    background-color: var(--bg-color);
     height: 100vh;
 }
 
@@ -46,13 +47,13 @@ button:hover {
 }
 
 h2.titulo {
-    color: var(--branco);
+    color: var(--preto);
     font-size: 38px;
     text-align: center;
 }
 
 h2.titulo span {
-    color: var(--amarelo);
+    color: var(--azul-marinho);
 }
 
 /* CABEÇALHO */
@@ -64,6 +65,7 @@ header.logo a img {
 
 header {
     padding: 40px 4%;
+    background-color: var(--azul-marinho);
 }
 
 header > .interface {
@@ -106,16 +108,16 @@ section.inicio .flex {
 }
 
 .inicio h1 {
-    color: var(--branco);
+    color: var(--preto);
     font-size: 42px;
 }
 
 .inicio h1 span {
-    color: var(--amarelo_claro);
+    color: var(--azul-marinho);
 }
 
 .inicio .txt-inicio p {
-    color: var(--branco);
+    color: var(--preto);
     margin: 40px 0;
 }
 
@@ -137,7 +139,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color: var(--branco);
+    color: var(--preto);
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -151,7 +153,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color: var(--amarelo);
+    color: var(--azul-marinho);
 }
 
 .especialidades .especialidades-box h3 {
@@ -182,7 +184,7 @@ section.sobre-mim .flex {
 }
 
 .sobre-mim .txt-sobre-mim {
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .sobre-mim .txt-sobre-mim h2 {
@@ -192,7 +194,7 @@ section.sobre-mim .flex {
 }
 
 .sobre-mim .txt-sobre-mim h2 span {
-    color: var(--amarelo);
+    color: var(--azul-marinho);
     display: block;
 }
 
@@ -206,7 +208,8 @@ section.sobre-mim .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: var(--amarelo);
+    background-color: var(--azul-marinho);
+    color: var(--branco);
     font-size: 24px;
     margin: 0 10px;
     cursor: pointer;
@@ -298,8 +301,8 @@ form .btn-form {
 }
 
 form .btn-form input {
-    background-color: var(--amarelo);
-    color: var(--preto);
+    background-color: var(--azul-marinho);
+    color: var(--branco);
     font-weight: 600;
     width: 120px;
     cursor: pointer;
@@ -313,6 +316,7 @@ form .btn-form input:hover {
 
 footer {
     padding: 80px 4%;
+    background-color: var(--azul-marinho);
 }
 
 footer .flex {
@@ -326,11 +330,23 @@ footer .line-footer {
 
 
 footer .line-footer p i{
-    color: var(--amarelo);
+    color: var(--azul-marinho);
     font-size: 22px;
 }
 
 footer .line-footer p a {
-    color: var(--branco);
+    color: var(--preto);
     text-decoration: none;
+}
+
+.btn-redes-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
 }
