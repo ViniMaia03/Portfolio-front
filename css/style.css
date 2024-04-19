@@ -201,7 +201,7 @@ section.sobre-mim .flex {
     text-align: justify;
 }
 
-.sobre-mim .txt-sobre-mim .btn-redes button {
+.btn-redes button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -307,4 +307,30 @@ form .btn-form input {
 
 form .btn-form input:hover {
     transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 80px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+
+
+footer .line-footer p i{
+    color: var(--amarelo);
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: var(--branco);
+    text-decoration: none;
 }
