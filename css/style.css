@@ -350,3 +350,100 @@ footer .line-footer p a {
     margin: 0 10px;
     cursor: pointer;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px) {
+
+    /* ESTLIZAÇÃO GERAL */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2 .titulo {
+        font-size: 32px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    /* HEADER */
+    .menu, .btn-contato {
+        display: none;
+    }
+
+    /* INÍCIO */
+    section.inicio .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    section.inicio {
+        padding: 20px 8%;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .inicio p {
+        text-align: center;
+    }
+
+    .inicio .img-inicio img {
+        width: 100%;
+    }
+
+    /* MINHAS ESPECIALIDADES */
+
+    section.especialidades {
+        padding: 20px 8%;
+    }
+
+    /* SOBRE MIM */
+
+    section.sobre-mim {
+        padding: 20px 8%;
+        flex-direction: column-reverse;
+    }
+
+    .sobre-mim .txt-sobre-mim h2 {
+        font: 32px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-redes {
+        text-align: center;
+    }
+
+    .img-sobre-mim img {
+        width: 100%;
+    }
+
+    /* PORTFOLIO */
+
+    section.portfolio {
+        padding: 20px 8%;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    .img-portfolio {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer .flex {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}
