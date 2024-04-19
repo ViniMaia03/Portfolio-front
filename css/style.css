@@ -13,6 +13,7 @@
     --cinza_claro: #a7a7a7;
     --amarelo: #fcad02;
     --amarelo_claro: #fac229;
+    --cinza: #393939;
 }
 
 body {
@@ -34,14 +35,13 @@ body {
     font-size: 18px;
     font-weight: 600;
     background-color: var(--amarelo);
-    color: var(--branco);
+    color: var(--preto);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--amarelo_claro);
     transform: scale(1.05);
 }
 
@@ -237,7 +237,8 @@ section.portfolio .flex{
     background-position: 100% 100%;
 }
 
-.overlay {
+.overlay a{
+    text-decoration: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -254,7 +255,56 @@ section.portfolio .flex{
     opacity: 0;
 }
 
-.overlay:hover {
+.overlay a:hover {
     opacity: 1;
     transition: .5s;
+}
+
+/* FORMULÁRIO */
+
+section.forms {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: var(--cinza);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-form input {
+    background-color: var(--amarelo);
+    color: var(--preto);
+    font-weight: 600;
+    width: 120px;
+    cursor: pointer;
+}
+
+form .btn-form input:hover {
+    transform: scale(1.05);
 }
