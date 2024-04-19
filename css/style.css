@@ -390,6 +390,10 @@ footer .line-footer p a {
         text-align: center;
     }
 
+    .inicio .img-inicio img {
+        width: 100%;
+    }
+
     /* MINHAS ESPECIALIDADES */
 
     section.especialidades {
@@ -411,6 +415,10 @@ footer .line-footer p a {
 
     .btn-redes {
         text-align: center;
+    }
+
+    .img-sobre-mim img {
+        width: 100%;
     }
 
     /* PORTFOLIO */
