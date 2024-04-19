@@ -1,4 +1,4 @@
-/* GERAL */
+/* ESTLIZAÇÃO GERAL */
 
 * {
     margin: 0;
@@ -40,7 +40,7 @@ body {
     cursor: pointer;
 }
 
-.btn-contato button:hover {
+button:hover {
     background-color: var(--amarelo_claro);
     transform: scale(1.05);
 }
@@ -161,4 +161,53 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box p {
     font: 18px;
+}
+
+/* SOBRE MIM */
+
+section.sobre-mim {
+    padding: 80px 4%;
+}
+
+section.sobre-mim .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.img-sobre-mim img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.sobre-mim .txt-sobre-mim {
+    color: var(--branco);
+}
+
+.sobre-mim .txt-sobre-mim h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre-mim .txt-sobre-mim h2 span {
+    color: var(--amarelo);
+    display: block;
+}
+
+.sobre-mim .txt-sobre-mim p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre-mim .txt-sobre-mim .btn-redes button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--amarelo);
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
 }
