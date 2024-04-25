@@ -7,8 +7,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
-    /* COR DO BACKGOUND */
+    /* COR DO BACKGROUND */
     --bg-color: #fff9ea;
 
     /* CORES PRINCIPAIS */
@@ -62,11 +66,21 @@ section {
     justify-content: center;
     width: 45px;
     height: 40px;
-    font-size: 1.25rem;
+    font-size: 2rem;
     border-radius: 10px;
     text-decoration: none;
     color: var(--cinza_escuro);
+    background-color: var(--bg-color);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-titulo {
+    color: var(--amarelo);
+    font-size: 1.563rem;
+}
+
+.section-subtitulo {
+    font-size: 2.1875rem;
 }
 
 /* CABEÇALHO */
@@ -74,6 +88,10 @@ section {
 header {
     width: 100%;
     padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 3;
 }
 
 .menu {
@@ -155,7 +173,6 @@ header {
     background-color: var(--branco);
     padding: 8px 14px;
     font-weight: 500;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
 
@@ -182,47 +199,139 @@ header {
     z-index: 1;
 }
 
+/* CARDÁPIO */
 
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
+.pratos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
 
+.prato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--branco);
+    position: relative;
+    overflow: hidden;
+}
 
+.prato-fav {
+    position: absolute;
+    background-color: var(--amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--branco);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
 
+.prato-subtitulo {
+    color: var(--cinza_escuro);
+    text-align: center;
+}
 
+.prato-avaliacao i {
+    color: var(--amarelo-botao);
+}
 
+.prato-preco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+/* AVALIAÇÕES */
 
+.avaliacao {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
 
+.chef {
+    width: 500px;
+    height: auto;
+}
 
+.avaliacao .section-subtitulo {
+    font-size: 3rem;
+}
 
+.avaliacao-conteudo {
+    width: 50%;
+}
 
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
 
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--branco);
+}
 
+.feedback-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 
+.feedback-conteudo p {
+    display: flex;
+    justify-content: space-between;
+}
 
+.feedback-conteudo p span {
+    color: var(--amarelo);
+}
 
+/* FOOTER */
 
+footer {
+    background-color: var(--amarelo-botao-hover);
+}
 
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copy {
+    color: var(--cinza_escuro);
+    font-weight: 500;
+}
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1170px) {
@@ -263,4 +372,89 @@ header {
         text-align: center;
         list-style: none;
     }
+
+    /* INICIO */
+
+    .inicio {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    .banner, .banner img, .inicio .forma {
+        display: none;
+    }
+
+    .cta {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* CARDÁPIO */
+
+    .pratos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .prato {
+        width: calc(50% - 12px);
+    }
+
+    /* AVALIAÇÕES */
+
+    .avaliacao {
+        flex-direction: column;
+    }
+
+    .avaliacao .section-subtitulo {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .chef {
+        display: none;
+    } 
+    
+    .avaliacao-conteudo {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    /* CARDÁPIO */
+    .prato {
+        width:100%;
+    }
+
+    .cardapio .section-subtitulo {
+        text-align: center;
+    }
+
+
+    /* AVALIAÇÕES */
+
+    .avaliacao-conteudo {
+        width: 100%;
+    }
+
+    .avaliacao .section-subtitulo {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+   .feedback {
+    flex-direction: column;
+   }
+
+   /* FOOTER */
+
+   .rodape {
+    flex-direction: column;
+    gap: 20px;
+   }
 }

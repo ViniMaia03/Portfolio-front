@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 
@@ -47,14 +48,14 @@
     </header>
 
     <main class="container">
-        <section class="inicio">
+        <section class="inicio" id="inicio">
             <div class="forma"></div>
             <div class="cta">
                 <h1 class="titulo"> O sabor vai até <span> você </span></h1>
                 <p class="descricao"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nam velit repudiandae neque sequi natus dolorem, praesentium, officia illo quia fugit laboriosam dolore aut deserunt placeat, recusandae excepturi eveniet earum! </p>
 
                 <div class="cta-btn">
-                    <a href="#" class="btn-default"> Ver Cardápio </a>
+                    <a href="#cardapio" class="btn-default"> Ver Cardápio </a>
                     <a href="tel:+5511972205335" class="tel-btn">
                         <button class="btn-default"><i class="fa-solid fa-phone"></i></button> (11) 97220-5335
                     </a>
@@ -71,6 +72,201 @@
                 <img src="imagens/hero.png" alt="Banner">
             </div>
         </section>
+
+        <section class="cardapio" id="cardapio">
+            <h2 class="section-titulo"> Cardápio </h2>
+            <h3 class="section-subtitulo"> Nosso Pratos Especiais </h3>
+
+            <div class="pratos">
+                <div class="prato">
+                    <div class="prato-fav">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="imagens/dish.png" alt="Prato 1" class="prato-img">
+                    <h3 class="prato-titulo"> Prato 1 </h3>
+                    <span class="prato-subtitulo"> Descrição 1</span>
+
+                    <div class="prato-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(999+)</span>
+                    </div>
+
+                    <div class="prato-preco">
+                        <h4>R$50.00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <div class="prato-fav">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="imagens/dish2.png" alt="Prato 2" class="prato-img">
+                    <h3 class="prato-titulo"> Prato 2 </h3>
+                    <span class="prato-subtitulo"> Descrição 2 </span>
+
+                    <div class="prato-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(999+)</span>
+                    </div>
+
+                    <div class="prato-preco">
+                        <h4>R$50.00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <div class="prato-fav">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="imagens/dish3.png" alt="Prato 3" class="prato-img">
+                    <h3 class="prato-titulo"> Prato 3 </h3>
+                    <span class="prato-subtitulo"> Descrição 3 </span>
+
+                    <div class="prato-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(999+)</span>
+                    </div>
+
+                    <div class="prato-preco">
+                        <h4>R$50.00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div> 
+
+                <div class="prato">
+                    <div class="prato-fav">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="imagens/dish4.png" alt="Prato 4" class="prato-img">
+                    <h3 class="prato-titulo"> Prato 4</h3>
+                    <span class="prato-subtitulo"> Descrição 4 </span>
+
+                    <div class="prato-avaliacao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(999+)</span>
+                    </div>
+
+                    <div class="prato-preco">
+                        <h4>R$50.00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacao" id="avaliacao">
+            <img src="imagens/chef.png" alt="Foto de uma Chefe de Cozinha" class="chef">
+
+            <div class="avaliacao-conteudo">
+                <h2 class="section-titulo"> Avaliações </h2>
+                <h3 class="section-subtitulo"> O que os clientes acham </h3>
+
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="imagens/avatar.png" alt="foto do cliente" class="feedback-avatar">
+    
+                        <div class="feedback-conteudo">
+                            <p>
+                                 Maria Eduarda 
+                                 <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </span>
+                            </p>
+    
+                            <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam tempore temporibus nisi nihil reiciendis incidunt aperiam praesentium repudiandae excepturi accusamus corrupti sunt id, reprehenderit distinctio consequuntur officiis? Dolor, perspiciatis! "</p>
+                        </div>
+                    </div>    
+
+                    <div class="feedback">
+                        <img src="imagens/avatar.png" alt="foto do cliente" class="feedback-avatar">
+    
+                        <div class="feedback-conteudo">
+                            <p>
+                                 Maria Eduarda 
+                                 <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </span>
+                            </p>
+    
+                            <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam tempore temporibus nisi nihil reiciendis incidunt aperiam praesentium repudiandae excepturi accusamus corrupti sunt id, reprehenderit distinctio consequuntur officiis? Dolor, perspiciatis! "</p>
+                        </div>
+                    </div>    
+
+                    <div class="feedback">
+                        <img src="imagens/avatar.png" alt="foto do cliente" class="feedback-avatar">
+    
+                        <div class="feedback-conteudo">
+                            <p>
+                                 Maria Eduarda 
+                                 <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                 </span>
+                            </p>
+    
+                            <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veniam tempore temporibus nisi nihil reiciendis incidunt aperiam praesentium repudiandae excepturi accusamus corrupti sunt id, reprehenderit distinctio consequuntur officiis? Dolor, perspiciatis! "</p>
+                        </div>
+                    </div>    
+                </div>
+    
+                <button class="btn-default"> Ver mais Avaliações </button>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <img src="imagens/onda.svg">
+
+        <div class="rodape">
+            <span class="copy"> &copy 2024 - Vinicius Maia Santos </span>
+
+            <div class="redes-sociais">
+                <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
